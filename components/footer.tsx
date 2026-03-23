@@ -61,7 +61,7 @@ export function Footer() {
               </svg>
             </Link>
             <Link
-              href="mailto:contact@gdgepita.fr"
+              href="mailto:gdsc.epita@gmail.com"
               className="text-muted-foreground hover:text-[#DB4437] transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >

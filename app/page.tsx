@@ -3,27 +3,12 @@ import { Footer } from "@/components/footer";
 import { EventCard } from "@/components/event-card";
 import { SocialSection } from "@/components/social-section";
 import { ScrollAnimation } from "@/components/scroll-animation";
+import { NewsletterSection } from "@/components/sections/newsletter-section";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { getUpcomingEvents } from "@/lib/data/events";
 
 export default function Home() {
-  const events = [
-    {
-      title: "Workshop Kubernetes",
-      location: "Amphi 1",
-      date: "14 Fév",
-    },
-    {
-      title: "Introduction à Flutter",
-      location: "Labo 3",
-      date: "20 Fév",
-    },
-    {
-      title: "Tech Talk: Google Cloud",
-      location: "Online",
-      date: "28 Fév",
-    },
-  ];
+  const events = getUpcomingEvents().slice(0, 3);
 
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-background via-background to-muted/20">
@@ -205,11 +190,13 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {events.map((event, index) => (
-                <ScrollAnimation key={index} delay={index * 100}>
+                <ScrollAnimation key={event.slug} delay={index * 100}>
                   <EventCard
+                    href={`/events/${event.slug}`}
                     title={event.title}
                     location={event.location}
                     date={event.date}
+                    image={event.image}
                   />
                 </ScrollAnimation>
               ))}
@@ -225,36 +212,7 @@ export default function Home() {
 
       {/* Newsletter Section */}
       <ScrollAnimation>
-        <section className="relative w-full px-4 py-24 bg-gradient-to-br from-[#4285F4]/5 via-[#DB4437]/5 to-[#F4B400]/5 border-t border-b border-border/50">
-          <div className="container mx-auto max-w-3xl text-center">
-            <div className="inline-block mb-6">
-              <span className="px-4 py-2 rounded-full bg-gradient-to-r from-[#0F9D58]/10 to-[#0F9D58]/5 text-sm font-semibold text-[#0F9D58] border border-[#0F9D58]/20 backdrop-blur-sm">
-                Newsletter
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-              Restez informé
-            </h2>
-            <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Inscrivez-vous à notre newsletter pour ne manquer aucun événement et recevoir les dernières actualités tech.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <Input
-                type="email"
-                placeholder="Votre adresse email"
-                className="flex-1 h-12 text-base border-2 focus:border-[#0F9D58] focus:ring-2 focus:ring-[#0F9D58]/20 rounded-xl"
-                required
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="bg-gradient-to-r from-[#0F9D58] to-[#0F9D58]/90 hover:from-[#0F9D58]/90 hover:to-[#0F9D58] text-white shadow-xl hover:shadow-2xl hover:shadow-[#0F9D58]/25 px-8 whitespace-nowrap"
-              >
-                S&apos;inscrire
-              </Button>
-            </form>
-          </div>
-        </section>
+        <NewsletterSection />
       </ScrollAnimation>
 
       {/* Contact Section */}
@@ -274,7 +232,7 @@ export default function Home() {
               className="bg-gradient-to-r from-[#4285F4] to-[#4285F4]/90 hover:from-[#4285F4]/90 hover:to-[#4285F4] text-white shadow-xl hover:shadow-2xl hover:shadow-[#4285F4]/25 px-10 text-base"
               asChild
             >
-              <a href="mailto:contact@gdgepita.fr">Nous contacter</a>
+              <a href="/contact">Nous contacter</a>
             </Button>
           </div>
         </section>

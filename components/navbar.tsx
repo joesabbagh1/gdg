@@ -2,9 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const homeHref = (hash: string) => (isHome ? hash : `/${hash}`);
+
   return (
     <nav className="sticky top-0 z-50 w-full bg-background border-b border-border/50 shadow-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
@@ -20,28 +24,35 @@ export function Navbar() {
         </Link>
         <div className="hidden md:flex items-center gap-2">
           <Link
-            href="#accueil"
+            href={homeHref("#accueil")}
             className="text-sm font-semibold text-foreground hover:text-[#4285F4] transition-colors duration-200 px-4 py-2 rounded-md relative group"
           >
             Accueil
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4285F4] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            href="#a-propos"
+            href={homeHref("#a-propos")}
             className="text-sm font-semibold text-foreground hover:text-[#DB4437] transition-colors duration-200 px-4 py-2 rounded-md relative group"
           >
             À propos
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#DB4437] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            href="#evenements"
+            href={homeHref("#evenements")}
             className="text-sm font-semibold text-foreground hover:text-[#F4B400] transition-colors duration-200 px-4 py-2 rounded-md relative group"
           >
             Événements
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F4B400] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            href="#contact"
+            href="/events"
+            className="text-sm font-semibold text-foreground hover:text-[#F4B400] transition-colors duration-200 px-4 py-2 rounded-md relative group"
+          >
+            Tous les events
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#F4B400] group-hover:w-full transition-all duration-300"></span>
+          </Link>
+          <Link
+            href="/contact"
             className="text-sm font-semibold text-foreground hover:text-[#0F9D58] transition-colors duration-200 px-4 py-2 rounded-md relative group"
           >
             Contact

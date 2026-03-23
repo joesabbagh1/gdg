@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "bien-demarrer-avec-gdg-epita",
+    "title": "Bien démarrer avec le GDG EPITA",
+    "excerpt": "Découvrez comment rejoindre le GDG EPITA, participer aux événements et contribuer à la communauté.",
+    "content": "Le Google Developer Group EPITA est une communauté ouverte à tous les étudiants passionnés par les technologies Google. Rejoindre le club vous permet d'assister à des workshops, des conférences, et de rencontrer d'autres développeurs.\n\nDans cet article, nous expliquons comment :\n- vous inscrire aux événements,\n- proposer un talk ou un atelier,\n- contribuer à l'organisation et aux projets du club.",
+    "date": "2026-03-01",
+    "tags": ["club", "communauté"]
+  },
+  {
+    "slug": "premiers-pas-avec-google-cloud",
+    "title": "Premiers pas avec Google Cloud",
+    "excerpt": "Un tour d'horizon des principaux services Google Cloud pour les étudiants et développeurs.",
+    "content": "Google Cloud Platform (GCP) propose de nombreux services pour héberger des applications, stocker des données et intégrer de l'IA. Pour débuter, nous recommandons de se concentrer sur :\n\n- Compute Engine et Cloud Run pour exécuter vos services,\n- Cloud Storage pour stocker des fichiers,\n- Firestore pour gérer des données applicatives.\n\nAu fil de l'année, le GDG EPITA organise des workshops pratiques pour vous aider à prendre en main ces outils.",
+    "date": "2026-03-10",
+    "tags": ["google-cloud", "cloud"]
+  }
+]
+

@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "angular-workshop",
+    "title": "Hands-on introduction to Angular",
+    "location": "14 Rue Voltaire, 14 Rue Voltaire, Le Kremlin-Bicêtre, 94270",
+    "date": "18 mars 2026",
+    "description": "🚀 PASSEZ AU NIVEAU SUPÉRIEUR AVEC ANGULAR !\n\nEnvie de maîtriser le framework développé par Google et plébiscité par les plus grandes entreprises ? C’est le moment. 💻\n\nRejoignez-nous pour un workshop exclusif animé par Modeste ASSIONGBON, professionnel du secteur, pour découvrir ce qu'on attend réellement d'un développeur aujourd'hui.\n\nAu programme :\n\n🔹 Immersion dans l'écosystème Angular\n\n🔹 Maîtrise de l’architecture web moderne\n\n🔹 Secrets et bonnes pratiques du monde de l'entreprise\n\n🔹 Échanges en direct avec un expert\n\n⚠️ PRÉ-REQUIS IMPORTANT : Pour coder dans les meilleures conditions, merci d'installer NVM (Node Version Manager) sur votre machine avant la session.\n\nNe manquez pas cette chance de booster votre stack technique ! 📈\n\n📍 EPITA - 14-16 Rue Voltaire, 94270 Le Kremlin-Bicêtre - KB001",
+    "image": "/events/angular.png",
+    "startDate": "2026-03-18"
+  }
+]
