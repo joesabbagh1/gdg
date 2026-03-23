@@ -7,5 +7,15 @@
     "description": "🚀 PASSEZ AU NIVEAU SUPÉRIEUR AVEC ANGULAR !\n\nEnvie de maîtriser le framework développé par Google et plébiscité par les plus grandes entreprises ? C’est le moment. 💻\n\nRejoignez-nous pour un workshop exclusif animé par Modeste ASSIONGBON, professionnel du secteur, pour découvrir ce qu'on attend réellement d'un développeur aujourd'hui.\n\nAu programme :\n\n🔹 Immersion dans l'écosystème Angular\n\n🔹 Maîtrise de l’architecture web moderne\n\n🔹 Secrets et bonnes pratiques du monde de l'entreprise\n\n🔹 Échanges en direct avec un expert\n\n⚠️ PRÉ-REQUIS IMPORTANT : Pour coder dans les meilleures conditions, merci d'installer NVM (Node Version Manager) sur votre machine avant la session.\n\nNe manquez pas cette chance de booster votre stack technique ! 📈\n\n📍 EPITA - 14-16 Rue Voltaire, 94270 Le Kremlin-Bicêtre - KB001",
     "image": "/events/angular.png",
     "startDate": "2026-03-18"
+  },
+  {
+    "slug": "paris-fintech-hackathon-solve-with-ai",
+    "title": "Paris Fintech Hackathon: Solve with AI",
+    "location": "HEC Paris Business School, 1 Rue de la Libération, 78350 Jouy-en-Josas, France",
+    "date": "25–26 avril 2026 · 9h00 (sam.) – 16h00 (dim.) · UTC+2",
+    "description": "24 h · 150 hackers · l’avenir de la finance.\n\nRejoins le hackathon étudiant dédié à l’IA générative et à la fintech, avec SP AI (Sciences Po), ASES France (HEC & Stanford) et les Google Developer Groups.\n\nLe défi : utiliser l’IA pour faire évoluer la finance. Développeurs, profils business ou design : construisez une solution concrète en 24 h non-stop.\n\nKeynote d’ouverture, mentors tech & entrepreneuriat, accès à des outils IA et crédits sponsors, restauration sur place.\n\nAucun prérequis en code — il suffit d’un problème à résoudre.\n\nLes équipes gagnantes : cash prizes, avantages sponsors, visibilité auprès de VCs et grands groupes.\n\nPourquoi venir ?\n• Stack et outils avec Google, Mistral AI, Lovable, Station F, Hg Capital.\n• Mentorat avec des ingénieurs et experts du secteur.\n• Pitch devant un jury de VCs et fondateurs.\n• Réseau avec des étudiants de HEC, Sciences Po, Polytechnique, Stanford.\n\nInfos clés\n• Lieu : campus HEC, Jouy-en-Josas (adresse ci-dessus).\n• Dates : 25–26 avril 2026, 9h00 – 16h00 (GMT+2).\n• Places : 150, sur candidature / sélection.\n\nOrganisation associée : GDG on Campus EPITA — Paris, France.\n\nInscription / billets : utilise le lien « Get tickets » sur la page officielle de l’événement (Google Developer Groups / plateforme événement).",
+    "tags": ["AI", "Build with AI", "Hackathon", "Fintech"],
+    "image": "/events/paris-fintech-hackathon.png",
+    "startDate": "2026-04-25T09:00:00+02:00"
   }
 ]
